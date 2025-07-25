@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Kamalasankari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@500&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Kamalasankari Subramaniakuppusamy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <span class="emoji">🌙</span>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <main class="blog-container">
+    <p class="blog-intro">
+      I pen down my learnings as I explore new ideas, technologies, and perspectives.
+      Each article on Medium is a reflection of my curiosity — unraveling concepts, breaking them down, and sharing insights in a way that’s both thoughtful and relatable.
+    </p>
+
+    <div class="blog-grid">
+      <a href="https://medium.com/@iamkamalamskls/demystifying-owasp-the-watchdog-of-web-application-security-bdef6c9e9197"
+         target="_blank" class="blog-card">
+        <img src="assets\OWASP Top 10 Vulnerabilities.png" alt="OWASP Article Cover Image" />
+        <div class="card-title">Demystifying OWASP: The Watchdog of Web Application Security</div>
+      </a>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
