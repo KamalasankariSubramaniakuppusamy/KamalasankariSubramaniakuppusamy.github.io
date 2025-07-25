@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Kamalasankari</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@500&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Kamalasankari Subramaniakuppusamy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <span class="emoji">🌙</span>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="projects-container">
+    <div class="typewriter-wrapper">
+      <h1 class="typewriter-title"><span id="typewriter-title-text"></span><span class="cursor round"></span></h1>
+      <p class="projects-description"><span id="typewriter-desc-text"></span><span class="cursor round desc-cursor"></span></p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card fade-in"><h2 style="color: #fff;">Disaster Damage Detection</h2><a href="project-details/project1.html" class="btn-outline">View Details</a></div>
+      <div class="project-card fade-in"><h2 style="color: #fff;">Fake Review Detection</h2><a href="project-details/project2.html" class="btn-outline">View Details</a></div>
+      <div class="project-card fade-in"><h2 style="color: #fff;">CartCompass</h2><a href="project-details/project3.html" class="btn-outline">View Details</a></div>
+      <div class="project-card fade-in"><h2 style="color: #fff;">MalCodeAI</h2><a href="project-details/project4.html" class="btn-outline">View Details</a></div>
+    </div>
+  </main>
+
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
