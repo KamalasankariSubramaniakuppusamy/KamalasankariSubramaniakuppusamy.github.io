@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kamalasankari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@500&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Kamalasankari</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <span class="emoji">🌙</span>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <h1>Let's Connect</h1>
+    <p class="contact-description">
+      Feel free to reach out for collaborations, questions, or just to say hi!
+    </p>
+
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/kamalasankari" target="_blank">LinkedIn</a>
+      <a href="https://github.com/iamkamalamskls" target="_blank">GitHub</a>
+      <a href="https://medium.com/@iamkamalamskls" target="_blank">Medium</a>
+      <a href="mailto:iamkamalamskls@gmail.com">Email</a>
+    </div>
+
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="from_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <span id="form-status"></span>
+    </form>
+  </main>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
