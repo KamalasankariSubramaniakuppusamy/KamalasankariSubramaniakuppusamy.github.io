@@ -4,18 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume | Kamalasankari</title>
-
-  <!-- Consistent CSS order -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="dark-mode.css" />
   <link rel="stylesheet" href="resume.css" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <header>
     <nav class="navbar">
@@ -25,33 +18,28 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html" class="active">Resume</a></li>
-        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li>
-          <button id="theme-toggle" aria-label="Toggle Theme">
-            <span class="emoji">🌙</span>
-          </button>
-        </li>
+        <li><button id="theme-toggle"><span class="emoji">🌙</span></button></li>
       </ul>
       <div class="hamburger">&#9776;</div>
     </nav>
   </header>
 
-    <main class="resume-container">
-    <h1>My Resume</h1>
-    <p class="resume-description">
-        A concise overview of my technical expertise, academic journey, and professional experience — all in one document.
+  <main class="resume-container">
+    <h1 class="resume-title-center">
+      <span id="typewriter-title-text"></span>
+      <span class="cursor round"></span>
+    </h1>
+    <p class="resume-description" style="visibility: hidden;">
+      <span id="typewriter-desc-text"></span>
+      <span class="desc-cursor round"></span>
     </p>
-
-    <!-- Resume preview -->
-    <iframe src="assets/Kamalasankari_Resume.pdf" frameborder="0" class="resume-preview"></iframe>
-
-    <!-- Download button -->
     <a href="assets/Kamalasankari_Resume.pdf" download class="download-btn">Download Resume</a>
-    </main>
-
-
+    <iframe src="assets/Kamalasankari_Resume.pdf" frameborder="0" class="resume-preview"></iframe>
+  </main>
 
   <script src="resume.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
