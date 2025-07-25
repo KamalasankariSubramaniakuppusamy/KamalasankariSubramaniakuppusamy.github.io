@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume | Kamalasankari</title>
-  <link rel="stylesheet" href="resume.css" />
-  <link rel="stylesheet" href="dark-mode.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link rel="stylesheet" href="resume.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -20,26 +20,37 @@
         <li><a href="resume.html" class="active">Resume</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><button id="theme-toggle"><span class="emoji">🌙</span></button></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <span class="emoji">🌙</span>
+          </button>
+        </li>
       </ul>
       <div class="hamburger">&#9776;</div>
     </nav>
   </header>
 
   <main class="resume-container">
-    <h1 class="resume-title-center">
-      <span id="typewriter-title-text"></span>
-      <span class="cursor round"></span>
-    </h1>
-    <p class="resume-description" style="visibility: hidden;">
-      <span id="typewriter-desc-text"></span>
-      <span class="desc-cursor round"></span>
-    </p>
-    <a href="assets/Kamalasankari_Resume.pdf" download class="download-btn">Download Resume</a>
-    <iframe src="assets/Kamalasankari_Resume.pdf" frameborder="0" class="resume-preview"></iframe>
+    <div class="centered-title">
+      <h1 class="resume-title">
+        <span id="typewriter-title-text"></span>
+        <span class="cursor round"></span>
+      </h1>
+      <p class="resume-description">
+        <span id="typewriter-desc-text"></span>
+        <span class="desc-cursor round blink"></span>
+      </p>
+    </div>
+
+    <div class="resume-preview">
+      <iframe src="assets\Kamalasankari_Resume.pdf" class="resume-frame" frameborder="0"></iframe>
+      <div class="download-wrapper">
+        <a href="assets\Kamalasankari_Resume.pdf" download class="btn-outline">Download Resume</a>
+      </div>
+    </div>
   </main>
 
-  <script src="resume.js"></script>
   <script src="main.js"></script>
+  <script src="resume.js"></script>
 </body>
 </html>

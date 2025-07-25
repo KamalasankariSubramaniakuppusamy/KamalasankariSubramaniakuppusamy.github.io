@@ -1,77 +1,98 @@
 .resume-container {
-  padding: 3rem 2rem;
-  max-width: 1000px;
+  padding: 4rem 2rem;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-.resume-container h1 {
+.centered-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.resume-title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
   font-weight: 600;
-}
-
-.resume-container p {
-  font-size: 1.1rem;
-  color: var(--text-muted, #555);
-  margin-bottom: 2rem;
-}
-
-.download-btn {
+  white-space: nowrap;
+  overflow: hidden;
   display: inline-block;
-  padding: 0.8rem 1.5rem;
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: #111;
-  color: #fff;
-  border: 2px solid #111;
-  border-radius: 6px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #fff;
-  color: #111;
-}
-
-
-.resume-preview {
-  width: 100%;
-  height: 600px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease;
-}
-
-.resume-preview:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .resume-preview {
-    height: 500px;
-  }
-
-  .resume-container h1 {
-    font-size: 2rem;
-  }
-
-  .resume-container p {
-    font-size: 1rem;
-  }
 }
 
 .resume-description {
   font-size: 1.1rem;
-  color: #111; /* Brighter color */
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  text-align: center;
   font-style: italic;
+  color: #555;
+  visibility: hidden;
+  margin-top: 1rem;
 }
 
+.resume-frame {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+}
+
+.resume-frame.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.download-wrapper {
+  margin-top: 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+}
+
+.download-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cursor.round,
+.desc-cursor.round {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #111;
+  margin-left: 8px;
+  animation: blink-round 0.8s infinite;
+}
+
+body.dark .cursor.round,
+body.dark .desc-cursor.round {
+  background-color: #fff;
+}
+
+@keyframes blink-round {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.btn-outline {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #111;
+  color: #111;
+  background: transparent;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark .btn-outline:hover {
+  background-color: #fff;
+  color: #000;
+}
